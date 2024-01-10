@@ -1,0 +1,12 @@
+span:hover{
+    color: rebeccapurple !important
+}
+.h1-class:hover{
+    color: rebeccapurple  
+}
+.sal-miel__b:hover{
+    color: aqua;
+}
+.calculator__output{
+    font-size: 2cm;
+}
