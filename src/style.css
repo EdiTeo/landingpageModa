@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Spectral:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@font-face {
+    font-family: 'Catchy Mager';
+    src: url(/projectCalculator/src/catchy-mager/Catchy\ Mager.ttf) format('truetype');
+}
+:root{
+    --primary-color:#e8e5df;
+    --primary-color-negro:#9a8471;
+    --text-color-page:#3b3b3b;
+    --text-color-boton:#ffffff;
+    --tamanio-letras-lg:79.14px;
+    --text-titulos:'Catchy Mager', sans-serif;
+    --tipo-letra-navbar:"Lato", sans-serif;
+    --texto-p-contenido:"Raleway", sans-serif;
+    --logo:"Bodoni Moda", serif;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+img{
+    display: flex;
+    width: 100%;
+}
+a{
+    text-decoration: none;
+    transition: 0.3s;
+}
+body{
+    font-family: "Raleway", sans-serif;
+}
+nav{
+    position:fixed;
+    isolation: isolate;
+    width: 100%;
+    z-index: 9;
+}
+.nav_header{
+    padding: 1rem;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+     background-color: var(--primary-color);
+}
+.nav_logo a{
+    font-size: 1.75rem;
+    font-weight: 400;
+    font-family: var(--logo);
+    color: var(--text-color-page);
+     
+}
+.nav_menu_btn{
+    font-size: 1.5rem;
+    color:var(--text-color-page);
+    cursor:pointer;
+}
+.nav_link{
+    position: absolute;
+    top : 64px;
+    left: 0;
+    width: 100%;
+    padding: 2rem;
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap:2rem;
+    background-color: var(--primary-color);
+    transition: 0.5s;
+    z-index: -1;
+    transform: translateY(-100%);
+}
+
+.nav_link.open{
+    transform: translateY(0);
+}
+.nav_link a{
+   
+    font-weight:lighter;
+    color: var(--text-color-page);
+}
+.nav_link a:hover{
+    font-weight :bold;
+    color: var(--text-color-page);
+}
