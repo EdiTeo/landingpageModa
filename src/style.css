@@ -95,10 +95,12 @@ nav{
     nav {
         position: static;
         padding-block: 2rem 0;
-        padding-inline: 2rem; /* Más espacio desde los lados */
+        padding-inline: 2rem;  
         
     }
-
+    .nav_header .nav_link li{
+        padding: 20px;
+    }
     .nav_header {
         display: flex;
         align-items: center;
@@ -111,12 +113,15 @@ nav{
        
     }
 
-     
+     .nav_link{
+        z-index: 10; 
+     }
 
     .nav_logo a {
         color: var(--text-color-page);
     }
     .nav_logo{
+        padding: 5px;
         flex-shrink:0;
     }
     .nav_logo a span {
@@ -127,27 +132,24 @@ nav{
         display: none;
     }
 
-    .nav_link {
+    .nav_header .nav_link {
         display: flex;
         flex-direction: row;
         gap: 2rem;
         position: static;
         padding: 0;
-         
         background-color: transparent;
         transform: none;
     }
 
-    .nav_link li > a {
+    .nav_header .nav_link li > a {
         padding-block: 5px;
         color: var(--text-color-page);
         border-bottom: 4px solid transparent;
         transition: border-color 0.3s ease;
     }
-    
-    .nav_link li > a:hover {
+      
+    .nav_header .nav_link li > a:hover {
         border-bottom: 4px solid var(--primary-color-negro);
     }
-    
-    
 }
