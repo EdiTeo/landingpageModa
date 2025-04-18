@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Landing Page</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="home.css">
     <link
         href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css"
         rel="stylesheet"
@@ -14,14 +15,14 @@
     <nav class="navbar">
         <div class="nav_header">
             <div class="nav_logo">
-              <a href="#" class="logo_nav">LARANA, INC.</a>
+              <a href="#home" class="logo_nav">LARANA, INC.</a>
               
             </div>
             <ul class="nav_link" id="nav_links">
-              <li><a href="#">Home</a></li>
-              <li><a href="#">About</a></li>
-              <li><a href="#">Shop</a></li>
-              <li><a href="#">Contact</a></li>
+              <li><a href="#home">Home</a></li>
+              <li><a href="#about" >About</a></li>
+              <li><a href="#shop">Shop</a></li>
+              <li><a href="#contact">Contact</a></li>
             </ul>
             <div class="nav_menu_btn" id="menu_btn">
               <i class="ri-menu-line"></i>
@@ -30,6 +31,67 @@
         </div>
          
       </nav>
+      <main>
+        <section id="home">
+          <div class="container">
+            <div class="contenido_derecho_home">
+              <h1 class="title_home">Unveiling the Secret to Radiant Skin</h1>
+            </div>
+            <div class="contenido_izq_home">
+              <div class="contenido_imagen">
+                <img  class="img-1" src="/projectCalculator/src/Img/uno.jpg" alt="">
+               
+                <img class="img-2"  src="/projectCalculator/src/Img/apliquecrema.jpg" alt="">
+              </div>
+              <div class="texto">
+                <p class="subtitulo">
+                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
+                  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                   Ut enim ad minim veniam, quis nostrud exercitation
+                    ullamco laboris nisi ut aliquip ex ea commodo consequat.
+                </p>
+              </div>
+              <p class="texto_abajo">
+                Duis aute irure dolor in reprehenderit in voluptate velit 
+                esse cillum dolore eu fugiat nulla pariatur.
+              </p>
+            </div>
+          </div>
+        
+          <div class="abajo_home">
+              <img src="/projectCalculator/src/Img/piel.jpg" alt="">
+              
+              <div class="ini">
+                <a href="">40K</a>
+                <span>|</span>
+                <span class="textow">Subscriber in the World</span>
+              </div><br>
+              <div class="ini">
+                <a href="">20K</a>
+                <span>|</span>
+                <span class="textow">Subscriber in the World</span>
+              </div>
+              <button class="show_now">
+                Shop Now
+              </button>
+          </div>
+        </section>
+    
+        <section id="about">
+          <h1>Sobre Nosotros</h1>
+          <p>Este es el contenido de About.</p>
+        </section>
+    
+        <section id="shop">
+          <h1>Tienda</h1>
+          <p>Aquí está nuestra tienda.</p>
+        </section>
+    
+        <section id="contact">
+          <h1>Contacto</h1>
+          <p>Contáctanos aquí.</p>
+        </section>
+      </main>
     <script src="index.js"></script>
 </body>
 </html>

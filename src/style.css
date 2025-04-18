@@ -7,6 +7,7 @@
     --primary-color:#e8e5df;
     --primary-color-negro:#9a8471;
     --text-color-page:#3b3b3b;
+    --color-navbar:#faf9f8;
     --text-color-boton:#ffffff;
     --tamanio-letras-lg:79.14px;
     --text-titulos:'Catchy Mager', sans-serif;
@@ -18,11 +19,21 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    
      
 }
-body{
-    color: #faf9f8;
-}
+ 
+html {
+    scroll-behavior: smooth;
+  } 
+  section {
+    padding: 100px 20px;
+    min-height: 100vh;
+    color: var(--text-color-page); 
+  }
+  
+ 
+  
 img{
     display: flex;
     width: 100%;
@@ -32,7 +43,8 @@ a{
     transition: 0.3s;
 }
 body{
-    font-family: "Raleway", sans-serif;
+    font-family: var(--texto-p-contenido);
+    background-color: var(--primary-color);
 }
 nav{
     position:fixed;
@@ -46,10 +58,13 @@ nav{
     display: flex;
     align-items: center;
     justify-content: space-between;
-     background-color: var(--primary-color);
+     background-color: var(--color-navbar);
+}
+.navbar{
+    background-color: var(--color-navbar);
 }
 .nav_logo a{
-    font-size: 1.75rem;
+    font-size: 1.7rem;
     font-weight: 400;
     font-family: var(--logo);
     color: var(--text-color-page);
@@ -72,7 +87,7 @@ nav{
     justify-content: center;
     flex-direction: column;
     gap:2rem;
-    background-color: var(--primary-color);
+    background-color: var(--color-navbar);
     transition: 0.5s;
     z-index: -1;
     transform: translateY(-100%);
