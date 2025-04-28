@@ -77,7 +77,8 @@ a{
     font-size: 20px;
 }
 .texto_abajo{
-    
+    text-align: left;
+
 }
  
 .contenido_imagen {
@@ -86,7 +87,26 @@ a{
     width: 350px;
     
   }
-  
+.abajo_home img{
+    grid-column: span 2 / span 2;
+    grid-row: span 3 / span 3;
+    width: 450px;
+    height: 400px;
+    align-items: center;
+}
+.abajo_home{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    gap: 2px;
+    padding-top: 30px;
+}
+ 
+.boton{
+    
+    grid-column-start: 4;
+    
+}
  .img-1{
     margin-right: 10px;
     border-radius: 2px;
@@ -95,27 +115,30 @@ a{
     width: 335px;
     border-radius: 2px;
   }
-  .abajo_home img{
-    width: 150px;
-  }
+   
   .ini{
     text-align: center;
     font-family: var(--texto-p-contenido);
-    font-size: 14px;
+    font-size: 19px;
     line-height: 1.8; 
     letter-spacing: 1.5px; 
+    grid-row: span 2 / span 2;
+    grid-column-start: 3;
   }
   
-  .show_now{
+.show_now{
     font-family: var(--letra-button);
-  letter-spacing: 0.5px;
-  font-weight: 500;
-  position: relative;
-  left: 100px;  
-  padding: 10px 20px;
-  border: none;
-  border-radius: 5px;
-  background-color: var(--primary-color-negro);
-  color: var(--text-color-boton);
-  cursor: pointer;
+    letter-spacing: 0.5px;
+    font-weight: 600;
+    font-size: large;
+    position: relative;
+    left: 100px;  
+    padding: 15px 25px;
+    border: none;
+    border-radius: none;
+    background-color: var(--primary-color-negro);
+    color: var(--text-color-boton);
+    cursor: pointer;
+ 
   }
+ 
